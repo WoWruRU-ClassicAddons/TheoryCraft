@@ -144,6 +144,8 @@ TheoryCraft_MeleeMinMaxReader = {
 		type={"addeddamage"} },
 	{ pattern = "наносящий (%d+) ед%. урона сверх обычного",							-- Sinister Strike
 		type={"addeddamage"} },
+	{ pattern = "ближнего боя, наносящая дополнительно (%d+) единиц урона",							-- Aimed Shot
+		type={"addeddamage"} },
 	{ pattern = "наносящий цели на (%d+) ед%. урона больше",							-- Aimed Shot
 		type={"addeddamage"} },
 	{ pattern = "наносящих дополнительно (%d+) ед%. урона",							-- Multi-Shot
@@ -158,125 +160,120 @@ TheoryCraft_MeleeMinMaxReader = {
 }
 
 TheoryCraft_MeleeMinMaxReplacer = {
-	{ search = " causing %d+ to %d+ damage, modified by attack power, ",				-- Shield Slam
-	  replacewith = " causing $damage$ damage " },
-	{ search = " deals %d+%% weapon damage and ",							-- Scattershot / Ghostly
-	  replacewith = " deals $damage$ damage and " },
-	{ search = " causing damage equal to %d+%% of your attack power",				-- Bloodthirst
-	  replacewith = " causing $damage$ damage" },
-	{ search = "Increases the druid's next attack by %d+ damage",					-- Maul
-	  replacewith = "Your next attack causes $damage$ damage" },
-	{ search = " causing %d+% additional damage",							-- Claw
-	  replacewith = " causing $damage$ damage" },
-	{ search = " causing %d+%% weapon damage plus %d+ to the target",				-- Backstab
-	  replacewith = " causing $damage$ damage" },
-	{ search = " causing %d+%% damage plus %d+ to the target",					-- Shred/Ravage
-	  replacewith = " causing $damage$ damage" },
-	{ search = " causes %d+ damage in addition to your normal weapon damage",			-- Sinister Strike
-	  replacewith = " causes $damage$ damage" },
-	{ search = " that increases melee damage by %d+",						-- Aimed Shot
-	  replacewith = " that deals $damage$ damage to the target" },
-	{ search = " increases ranged damage by %d+",							-- Aimed Shot
-	  replacewith = " causes $damage$ damage to the target" },
-	{ search = " for an additional %d+ damage",							-- Multi-Shot
-	  replacewith = " for $damage$ damage" },
-	{ search = " deals weapon damage plus %d+ and ",						-- Mortal Strike
-	  replacewith = " deals $damage$ damage and " },
-	{ search = " does your weapon damage plus %d+ to ",						-- Cleave
-	  replacewith = " deals $damage$ damage to " },
-	{ search = " causing weapon damage plus %d+",							-- Overpower
-	  replacewith = " causing $damage$ damage" },
-	{ search = " to block enemy melee and ranged attacks%.",					-- Block
-	  replacewith = " to block enemy melee and ranged attacks, reducing damage taken by $blockvalue$." },
-	{ search = "This attack deals %d+%% weapon damage ",						-- Riposte
-	  replacewith = "This attack deals $damage$ damage " },
-	{ search = "inflicting (%d+) damage%.",								-- Swipe
-	  replacewith = "inflicting $damage$ damage." },
-	{ search = "that causes (%d+) damage,",								-- Mocking Blow
-	  replacewith = "that causes $damage$ damage," },
-	{ search = "and doing (%d+) damage to them",							-- Thunder Clap
-	  replacewith = "and doing $damage$ damage to them" },
-	{ search = " causing weapon damage ",						-- Whirlwind
-	  replacewith = " causing $damage$ damage " },
+	{ search = " наносящий противнику %d+ - %d+ ед%. урона (величина зависит от показателя блокирования щита) ",				-- Shield Slam
+	  replacewith = " наносящий противнику $damage$ ед. урона " },
+	{ search = " урон, равный %d+%% стандартного урона оружия, и ",							-- Scattershot / Ghostly
+	  replacewith = " урон, равный $damage$ стандартного урона оружия, и " },
+	{ search = " урон, равный %d+%% от вашей силы атаки",				-- Bloodthirst
+	  replacewith = " урон, равный $damage$ от вашей силы атаки" },
+	{ search = "Увеличивает урон следующей атаки друида на %d+ ед",					-- Maul
+	  replacewith = "Ваша следующая атака нанесет $damage$ ед. урона" },
+	{ search = " нанося дополнительно %d+% ед%. урона",							-- Claw
+	  replacewith = " нанося дополнительно $damage$ ед. урона" },
+	{ search = " наносящий цели %d+%% урона от оружия и дополнительно %d+ ед%. урона",				-- Backstab
+	  replacewith = " наносящий цели $damage$ урона от оружия" },
+	{ search = " нанося ему %d+%% урона и еще %d+ ед%. урона",					-- Shred/Ravage
+	  replacewith = " нанося ему $damage$ урона" },
+	{ search = " наносящий %d+ ед%. урона сверх обычного урона оружия",			-- Sinister Strike
+	  replacewith = " наносящий $damage$ ед. урона" },
+	{ search = " атака ближнего боя, наносящая дополнительно %d+ единиц урона",						-- Aimed Shot
+	  replacewith = " наносит $damage$ ед. урона по цели" },
+	{ search = " наносящий цели на %d+ ед%. урона больше обычного",							-- Aimed Shot
+	  replacewith = " наносящий цели на $damage$ ед. урона больше обычного" },
+	{ search = " и наносящих дополнительно %d+ ед%. урона",							-- Multi-Shot
+	  replacewith = " дополнительно $damage$ ед. урона" },
+	{ search = " урон от оружия, усиленный на %d+ ед%., и ",						-- Mortal Strike
+	  replacewith = " усиленный на $damage$ ед., и " },
+	{ search = " наносящая увеличенный на %d+ ед%. урон ",						-- Cleave
+	  replacewith = " наносящая увеличенный на $damage$ ед. урон " },
+	{ search = " обычный урон от оружия, усиленный на %d+ ед",							-- Overpower
+	  replacewith = " обычный урон от оружия, усиленный на $damage$ ед" },
+	{ search = " заблокировать атаку противника в ближнем или дальнем бою%.",					-- Block
+	  replacewith = " заблокировать атаку противника в ближнем или дальнем бою, получаемый урон снижен $blockvalue$." },
+	{ search = "Эта атака наносит %d+%% от урона оружия ",						-- Riposte
+	  replacewith = "Эта атака наносит $damage$ ед. урона " },
+	{ search = "нанося им (%d+) ед. урона%.",								-- Swipe
+	  replacewith = "нанося им $damage$ ед. урона." },
+	{ search = "удар, наносящий (%d+) ед%. урона,",								-- Mocking Blow
+	  replacewith = "удар, наносящий $damage$ ед. урона," },
+	{ search = "противников, нанося им (%d+) ед%. урона",							-- Thunder Clap
+	  replacewith = "противников, нанося им $damage$ ед. урона" },
+	{ search = " нанося каждому противнику урон от оружия ",						-- Whirlwind
+	  replacewith = " нанося каждому противнику $damage$ ед. урона " },
 }
 
 TheoryCraft_SpellMinMaxReader = {
-	{ pattern = "causing (%d+) to (%d+) Fire damage to himself and (%d+) to (%d+) Fire damage",	-- Hellfire
+	{ pattern = "наносящие заклинателю (%d+) - (%d+) ед%. урона от огня, а его противникам – (%d+) - (%d+) ед%. урона от огня",	-- Hellfire
 		type={"mindamage", "maxdamage", "mindamage", "maxdamage"} },
-	{ pattern = "causing (%d+) Fire damage to himself and (%d+) Fire damage",			-- Hellfire
+	{ pattern = "наносящие заклинателю (%d+) ед%. урона от огня, а его противникам – (%d+) ед%. урона от огня",			-- Hellfire
 		type={"bothdamage", "bothdamage"} },
 
-	{ pattern = "will be struck for (%d+) Nature damage.",						-- Lightning Shield
+	{ pattern = "с помощью заклинания, получает (%d+) ед%. урона от сил природы%.",						-- Lightning Shield
 		type={"bothdamage"} },
 
-	{ pattern = "and causing (%d+) Nature damage",							-- Insect Swarm
+	{ pattern = "и наносящий ему (%d+) ед%. урона от сил природы",							-- Insect Swarm
 		type={"bothdamage"} },
 
-	{ pattern = "horror for 3 sec and causes (%d+) Shadow damage",					-- Death Coil
+	{ pattern = "к паническому бегству в течение 3 сек%. и нанесение ему (%d+) ед%. урона от темной магии",					-- Death Coil
 		type={"bothdamage"} },
 
-	{ pattern = "(%d+) to (%d+)(.+)and another (%d+) to (%d+)",					-- Generic Hybrid spell
+	{ pattern = "(%d+) - (%d+)(.+)и еще (%d+) - (%d+)",					-- Generic Hybrid spell
 		type={"mindamage", "maxdamage", "tmptext", "dotmindamage", "dotmaxdamage"} },
-	{ pattern = "(%d+) to (%d+)(.+)and another (%d+)",						-- Generic Hybrid spell
+	{ pattern = "(%d+) - (%d+)(.+)и еще (%d+)",						-- Generic Hybrid spell
 		type={"mindamage", "maxdamage", "tmptext", "dotbothdamage"} },
-	{ pattern = "(%d+)(.+)and another (%d+) to (%d+)",						-- Generic Hybrid spell
+	{ pattern = "(%d+)(.+)и еще (%d+) - (%d+)",						-- Generic Hybrid spell
 		type={"bothdamage", "tmptext", "dotmindamage", "dotmaxdamage"} },
-	{ pattern = "(%d+)(.+)and another (%d+)",							-- Generic Hybrid spell
+	{ pattern = "(%d+)(.+)и еще (%d+)",							-- Generic Hybrid spell
 		type={"bothdamage", "tmptext", "dotbothdamage"} },
 
-	{ pattern = "(%d+) to (%d+)(.+)an additional (%d+) to (%d+)",					-- Generic Hybrid spell
+	{ pattern = "(%d+) - (%d+)(.+)и дополнительно (%d+) - (%d+)",					-- Generic Hybrid spell
 		type={"mindamage", "maxdamage", "tmptext", "dotmindamage", "dotmaxdamage"} },
-	{ pattern = "(%d+) to (%d+)(.+)an additional (%d+)",						-- Generic Hybrid spell
+	{ pattern = "(%d+) - (%d+)(.+)и дополнительно (%d+)",						-- Generic Hybrid spell
 		type={"mindamage", "maxdamage", "tmptext", "dotbothdamage"} },
-	{ pattern = "(%d+)(.+)an additional (%d+) to (%d+)",						-- Generic Hybrid spell
+	{ pattern = "(%d+)(.+)и дополнительно (%d+) - (%d+)",						-- Generic Hybrid spell
 		type={"bothdamage", "tmptext", "dotmindamage", "dotmaxdamage"} },
-	{ pattern = "(%d+)(.+)an additional (%d+)",							-- Generic Hybrid spell
+	{ pattern = "(%d+)(.+)и дополнительно (%d+)",							-- Generic Hybrid spell
 		type={"bothdamage", "tmptext", "dotbothdamage"} },
 
-	{ pattern = "(%d+) to (%d+)(.+) and (%d+) to (%d+)",						-- Flame Shock
+	{ pattern = "(%d+) - (%d+)(.+) и (%d+) - (%d+)",						-- Flame Shock
 		type={"mindamage", "maxdamage", "tmptext", "dotmindamage", "dotmaxdamage"} },
-	{ pattern = "(%d+) to (%d+)(.+) and (%d+)",							-- Flame Shock
+	{ pattern = "(%d+) - (%d+)(.+) и (%d+)",							-- Flame Shock
 		type={"mindamage", "maxdamage", "tmptext", "dotbothdamage"} },
-	{ pattern = "causing (%d+)(.+) and (%d+) to (%d+)",						-- Flame Shock
+	{ pattern = "наносит (%d+)(.+) и (%d+) - (%d+)",						-- Flame Shock
 		type={"bothdamage", "tmptext", "dotmindamage", "dotmaxdamage"} },
-	{ pattern = "causing (%d+)(.+) and (%d+)",							-- Flame Shock
+	{ pattern = "наносит (%d+)(.+) и (%d+)",							-- Flame Shock
 		type={"bothdamage", "tmptext", "dotbothdamage"} },
 
-	{ pattern = "(%d+) to (%d+) Fire damage.",							-- Magma totem
+	{ pattern = "(%d+) - (%d+) ед%. урона от огня",							-- Magma totem
 		type={"mindamage", "maxdamage"} },
-	{ pattern = "(%d+) Fire damage.",								-- Magma totem
+	{ pattern = "(%d+) ед%. урона от огня",								-- Magma totem
 		type={"bothdamage"} },
 
-	{ pattern = "yards for (%d+) to (%d+) every ",							-- Healing Stream totem
+	{ pattern = "который восполняет (%d+) - (%d+) ед%. здоровья ",							-- Healing Stream totem
 		type={"mindamage", "maxdamage"} },
-	{ pattern = "yards for (%d+) every ",								-- Healing Stream totem
+	{ pattern = "который восполняет (%d+) ед%. здоровья ",								-- Healing Stream totem
 		type={"bothdamage"} },
 
-	{ pattern = "(%d+) to (%d+)",									-- Generic Normal spell
+	{ pattern = "(%d+) - (%d+)",									-- Generic Normal spell
 		type={"mindamage", "maxdamage"} },
 	{ pattern = "(%d+)",										-- Generic no damage range spell
 		type={"bothdamage"} },
 }
 
 TheoryCraft_Dequips = {
-	{ type = "all", text="All Stats %+(%d+)" },
-	{ type = "formattackpower", text="%+(%d+) Attack Power in Cat, Bear" },
-	{ type = "attackpower", text="%+(%d+) Attack Power" },
-	{ type = "rangedattackpower", text="%+(%d+) ranged Attack Power" },
-	{ type = "rangedattackpower", text="Ranged Attack Power %+(%d+)%/" },
-	{ type = "strength", text="%+(%d+) Strength" },
-	{ type = "strength", text="Strength %+(%d+)" },
-	{ type = "agility", text="%+(%d+) Agility" },
-	{ type = "agility", text="Agility %+(%d+)" },
-	{ type = "stamina", text="%+(%d+) Stamina" },
-	{ type = "stamina", text="Stamina %+(%d+)" },
-	{ type = "intellect", text="%+(%d+) Intellect" },
-	{ type = "intellect", text="Intellect %+(%d+)" },
-	{ type = "spirit", text="%+(%d+) Spirit" },
-	{ type = "spirit", text="Spirit %+(%d+)" },
-	{ type = "totalhealth", text="Health %+(%d+)" },
-	{ type = "totalhealth", text="HP %+(%d+)" },
-	{ type = "meleecritchance", text="Improves your chance to get a critical strike by (%d+)%%%." },
+	{ type = "all", text="%+(%d+) ко всем характеристикам" },
+	{ type = "formattackpower", text="Увеличивает силу атаки на (%d+) ед%. в облике кошки, медведя" },
+	{ type = "attackpower", text="Увеличивает силу атаки на (%d+)" },
+	{ type = "rangedattackpower", text="Увеличивает силу атаки дальнего боя на (%d+)" },
+	{ type = "rangedattackpower", text="Увеличивает силу атаки дальнего боя на (%d+)%/" },
+	{ type = "strength", text="%+(%d+) к силе" },
+	{ type = "agility", text="%+(%d+) к ловкости" },
+	{ type = "stamina", text="%+(%d+) к выносливости" },
+	{ type = "intellect", text="%+(%d+) к интеллекту" },
+	{ type = "spirit", text="%+(%d+) к духу" },
+	{ type = "totalhealth", text="%+(%d+) к здоровью" },
+	{ type = "totalhealth", text="%+(%d+) здоровья" },
+	{ type = "meleecritchance", text="Увеличивает вероятность нанести критический удар на (%d+)%%%." },
 }
 
 TheoryCraft_Locale = {
