@@ -301,7 +301,7 @@ TheoryCraft_Locale = {
 		autoshotbefore = "Shoots the target for ",
 		autoshotafter = ".",
 		shooterror = "No wand equipped.",
-		crusader = "granting %d+ melee attack power",
+		crusader = "повышает его силу атаки в ближнем бою на %d+",
 	},
 	SpellTranslator = {
 		["Frostbolt"] = "Ледяная стрела",
@@ -704,44 +704,44 @@ TheoryCraft_PrimarySchools = {
 -- Checks every buff for these
 
 TheoryCraft_Buffs = {
-	{ text="damage done increases by (%d+)%%", type="Damagebaseincrease", amount="n/100" },   							-- General buff in av
-	{ text="Ignore (%d+) of enem.+armor", type="Sunder" },   							-- Bonereaver's Edge
-	{ text="Increases Healing Wave's effect by up to (%d+)%%.", type="Healing Wavetalentmod", amount="n/100" },  	-- Healing Way
-	{ text="Restores (%d+)%% of total Mana every 4 sec%.", type="FelEnergy", amount="n/100" },   			-- Fel Energy
+	{ text="наносимый урон увеличивается на (%d+)%%", type="Damagebaseincrease", amount="n/100" },   							-- General's Warcry
+	{ text="Игнорирование (%d+) ед%. вражеской брони%.", type="Sunder" },   							-- Bonereaver's Edge
+--[[]]	{ text="Эффект заклинания \"Волна исцеления\" усилен до (%d+)%%.", type="Healing Wavetalentmod", amount="n/100" },  	-- Healing Way
+--[[]]	{ text="Восполнение (%d+)%% маны раз в 4 сек%.", type="FelEnergy", amount="n/100" },   			-- Fel Energy
 	{ text="Magical damage dealt.-increase.-(%d+)", type="All" },   						-- Very Berry/Eye of Moam
 	{ text="Magical resistances of your spell targets reduced by (%d+)", type="Allpenetration" },   		-- Eye of Moam
-	{ text="Increases damage and healing done by magical spells and effects by up to (%d+)%.", type="All" },   	-- Elements/Five Thunders
-	{ text="Melee attack power increased by (%d+)%.  Melee attacks are %d+%% faster, but deal less damage%.", type="AttackPowerCrusader" }, -- Seal of the crusader
-	{ text="(%d+) mana regen per tick%.", type="manaperfive" },							-- Warchief's blessing
-	{ text="Gain (%d+) mana every 2 seconds%.", type="manaperfive", amount="totem" },				-- Totems
-	{ text="Receives up to (%d+) extra healing from Holy Light spells", type="Holy Light", amount="hl", target = "target"},	-- Blessing of light
-	{ text="(%d+) extra healing from Flash of Light spells%.", type="Flash of Light", amount="fol", target = "target" },	-- Blessing of light
-	{ text="Holy Shock spell increased by 100%%", type="Holycritchance", amount=100 },				-- Divine Favour
-	{ text="Holy Shock spell increased by 100%%", type="Holy Shockcritchance", amount=100 },			-- Divine Favour
-	{ text="Increases critical strike chance from Fire damage spells by (%d+)%%", type="Firecritchance" },		-- Combustion in 1.11
-	{ text="Spell effects increased by (%d+)%.", type="All" },							-- Spell Blasting
-	{ text="Mana cost of your next spell is reduced by 100%%%.", type="Holycritchance", amount=25 },		-- Inner Focus
-	{ text="Increases healing done by spells and effects by up to (%d+) for %d+ sec%.", type="Healing" },		-- Blessed Prayer
-	{ text="Shadow damage you deal increased by (%d+)%%%.", type="Shadowbaseincrease", amount="n/100" },		-- Shadowform
-	{ text="Increases damage by (%d+)%%%.", type="Allbaseincrease", amount=0.05 },					-- Sayge's fortune
-	{ text="Increases damage by (%d+)%%%.", type="Meleebaseincrease", amount=0.05 },				-- Sayge's fortune
-	{ text="Fire damage increased by (%d+)%%%.", type="Firebaseincrease", amount="n/100" },				-- Burning Wish Demonic Sacrifice Imp
-	{ text="Increases damage caused by (%d+)%%%.", type="Allbaseincrease", amount="n/100" },			-- Master Demonologist Succubus
-	{ text="Shadow damage increased by (%d+)%%%.", type="Shadowbaseincrease", amount="n/100" },			-- Touch of Shadow Demonic Sacrifice Succubus
-	{ text="Melee damage increased by (%d+)%%%.", type="Meleebaseincrease", amount="n/100" },			-- Enrage
-	{ text="100%% Mana regeneration may continue while casting", type="ICPercent", amount=4 }, 			-- Innervate
-	{ text="(%d+)%% of your mana regeneration to continue while", type="ICPercent", amount="n/100" },		-- Mage Armor
-	{ text="schoolname spell damage increased by up to (%d+)%." },							-- Elixir of frost power
-	{ text="Increases spell fire damage by up to (%d+)%.", type="Fire" },						-- Elixir of greater firepower
-	{ text="Spell damage and healing done increased by (%d+)%%%.", type="Allbaseincrease", amount="n/100" },	-- Power Infusion
-	{ text="Increased damage and mana cost for your spells%.", type="Damagemodifier", amount=0.35 },		-- Arcane Power
-	{ text="(%d+) [mM]ana every 5 seconds%.", type="manaperfive" }, 						-- Blessing of Wisdom/Nightfin soup
-	{ text="Mana Regeneration increased by (%d+) every 5 seconds%.", type="manaperfive" }, 				-- Safefish Well Fed
-	{ text="Spell damage increased by .-(%d+)", type="Damage" }, 							-- Flask of Supreme Power / ZHC Damage
-	{ text="spell critical chance.-(%d+)", type="Allcritchance" },							-- Moonkin Aura/Fire Festival Fury
-	{ text="Magical damage and healing dealt is increased by (%d+)", type="All" },					-- ToEP
+	{ text="Увеличивает урон и исцеляющие действия магических эффектов и заклинаний не более чем на (%d+)%.", type="All" },   	-- Elements/Five Thunders
+--[[]]	{ text="Сила атаки в ближнем бою увеличена на (%d+)%. Атаки ближнего боя ускорены на %d+%%, но наносят меньше урона%.", type="AttackPowerCrusader" }, -- Seal of the crusader
+	{ text="(%d+) ед%. маны каждые 5 сек.%.", type="manaperfive" },							-- Warchief's blessing
+--[[]]	{ text="Восполнение (%d+) ед%. маны раз в 2 сек%.", type="manaperfive", amount="totem" },				-- Totems
+	{ text="Получение (%d+) дополнительного исцеления от заклинания \"Свет небес\"", type="Holy Light", amount="hl", target = "target"},	-- Blessing of light
+	{ text="(%d+) дополнительного исцеления от заклинаний \"Вспышка Света\"%.", type="Flash of Light", amount="fol", target = "target" },	-- Blessing of light
+	{ text="\"Шок небес\" повышена на 100%%", type="Holycritchance", amount=100 },				-- Divine Favour
+	{ text="\"Шок небес\" повышена на 100%%", type="Holy Shockcritchance", amount=100 },			-- Divine Favor
+--[[]]	{ text="Вероятность нанести критический урон заклинаниями магии огня повышена на (%d+)%%", type="Firecritchance" },		-- Combustion in 1.11
+--[[]]	{ text="Эффект от заклинания увеличен на (%d+)%.", type="All" },							-- Spell Blasting
+--[[]]	{ text="Расход маны на следующее заклинание снижен на 100%%%.", type="Holycritchance", amount=25 },		-- Inner Focus
+--[[]]	{ text="Исцеление, производимое заклинаниями и эффектами, увеличено на (%d+) ед%.", type="Healing" },		-- Blessed Prayer
+--[[]]	{ text="Урон от темной магии увеличен на (%d+)%%%.", type="Shadowbaseincrease", amount="n/100" },		-- Shadowform
+	{ text="Урон увеличен на (%d+)%%%.", type="Allbaseincrease", amount=0.05 },					-- Sayge's fortune
+	{ text="Урон увеличен на (%d+)%%%.", type="Meleebaseincrease", amount=0.05 },				-- Sayge's fortune
+--[[]]	{ text="Урон от огня увеличен на (%d+)%%%.", type="Firebaseincrease", amount="n/100" },				-- Burning Wish Demonic Sacrifice Imp
+--[[]]	{ text="Наносимый урон увеличен на (%d+)%%%.", type="Allbaseincrease", amount="n/100" },			-- Master Demonologist Succubus
+--[[]]	{ text="Увеличение урона от темной магии на (%d+)%%%.", type="Shadowbaseincrease", amount="n/100" },			-- Touch of Shadow Demonic Sacrifice Succubus
+	{ text="Наносимый урон в ближнем бою увеличен на (%d+)%%%.", type="Meleebaseincrease", amount="n/100" },			-- Enrage
+--[[]]	{ text="Восполнение 100%% маны в процессе произнесения заклинаний%.", type="ICPercent", amount=4 }, 			-- Innervate
+--[[]]	{ text="Во время произнесения заклинаний мана восполняется со скоростью, равной (%d+)%% от обычной%.", type="ICPercent", amount="n/100" },		-- Mage Armor
+	{ text="Урон от schoolname увеличен вплоть до (%d+)%." },							-- Elixir of frost power
+--[[]]	{ text="Урон, причиненный заклинаниями и способностями огня увеличен до (%d+)%.", type="Fire" },						-- Elixir of Greater Firepower
+--[[]]	{ text="Урон от заклинаний и эффект исцеляющих заклинаний увеличены на (%d+)%%%.", type="Allbaseincrease", amount="n/100" },	-- Power Infusion
+--[[]]	{ text="Урон от заклинаний и затраты маны увеличены%.", type="Damagemodifier", amount=0.35 },		-- Arcane Power
+--[[]]	{ text="(%d+) ед%. маны раз в 5 сек%.", type="manaperfive" }, 						-- Blessing of Wisdom/Nightfin soup
+	{ text="Скорость восполнения маны увеличена на (%d+) ед%. раз в 5 сек%.", type="manaperfive" }, 				-- Safefish Well Fed
+--[[]]	{ text="Дополнительный урон от заклинаний вплоть до .-(%d+)", type="Damage" }, 							-- Flask of Supreme Power / ZHC Damage
+--[[]]	{ text="вероятность критического удара заклинаний.-(%d+)", type="Allcritchance" },							-- Moonkin Aura/Fire Festival Fury
+--[[]]	{ text="Наносимый магический урон и исцеляющие эффекты увеличены на (%d+)", type="All" },					-- Trinket Ephemeral Power
 	{ text="Healing increased by up to (%d+)", type="Healing" },							-- ZHC Healing
-	{ text="In addition, both the demon and master will inflict (%d+)%% more damage%.", type="Allbaseincrease", amount="n/100" },	-- Soul Link
+--[[]]	{ text="30%% урона, получаемого хозяином, передается демону. Весь наносимый урон повышен на (%d+)%%%.", type="Allbaseincrease", amount="n/100" },	-- Soul Link
 }
 
 TheoryCraft_Debuffs = {
@@ -792,19 +792,19 @@ TheoryCraft_EquipEveryRight = {
 TheoryCraft_EquipEveryLine = {
 	{ text=".+Block Value %+(%d+)", type="BlockValueReport" }, -- Block Value (ZG Enchant)
 	{ text="Ranged Attack Power %+(%d+)", type="RangedAttackPowerReport" }, 	-- Hunter Leg/Helm enchant
-	{ text="^(%d+) Block", type="BlockValueReport" }, 				-- Block Value (shield)
+--[[]]	{ text="Блокирование: (%d+)", type="BlockValueReport" }, 				-- Block Value (shield)
 
 	{ text="%+(%d+) Attack Power", type="AttackPowerReport" }, 			-- Attack power
 
-	{ text="Adds (%d+%.?%d+) damage per second", type="AmmoDPS", slot="Ammo" },	-- Arrows
+--[[]]	{ text="Добавляет (%d+%.?%d+) ед%. урона в секунду", type="AmmoDPS", slot="Ammo" },	-- Arrows
 
-	{ text="Main Hand", type="MeleeAPMult", amount="2.4", slot="MainHand" },	-- Weapon Damage
-	{ text="One%-Hand", type="MeleeAPMult", amount="2.4", slot="MainHand" },	-- Weapon Damage
-	{ text="Two%-Hand", type="MeleeAPMult", amount="3.3", slot="MainHand" },	-- Weapon Damage
+	{ text="Правая рука", type="MeleeAPMult", amount="2.4", slot="MainHand" },	-- Weapon Damage
+	{ text="Одноручное", type="MeleeAPMult", amount="2.4", slot="MainHand" },	-- Weapon Damage
+	{ text="Двуручное", type="MeleeAPMult", amount="3.3", slot="MainHand" },	-- Weapon Damage
 	{ text="(%d+) %- %d+", type="RangedMin", slot="Ranged" },			-- Weapon Damage
 	{ text="%d+ %- (%d+)", type="RangedMax", slot="Ranged" }, 			-- Weapon Damage
-	{ text="Scope %(%+(%d+) Damage%)", type="RangedMin", slot="Ranged" },		-- Weapon Damage enchant
-	{ text="Scope %(%+(%d+) Damage%)", type="RangedMax", slot="Ranged" },		-- Weapon Damage enchant
+--[[]]	{ text="Прицел %(%+(%d+) к урону%)", type="RangedMin", slot="Ranged" },		-- Weapon Damage enchant
+--[[]]	{ text="Прицел %(%+(%d+) к урону%)", type="RangedMax", slot="Ranged" },		-- Weapon Damage enchant
 	{ text="(%d+) %- %d+", type="MeleeMin", slot="MainHand" },			-- Weapon Damage
 	{ text="%d+ %- (%d+)", type="MeleeMax", slot="MainHand" }, 			-- Weapon Damage
 	{ text="Weapon Damage %+(%d+)", type="MeleeMin", slot="MainHand" },		-- Weapon Damage enchant
