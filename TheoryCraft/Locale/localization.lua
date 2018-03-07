@@ -494,7 +494,7 @@ TheoryCraft_Locale = {
 		{ id="mortalshots", translated="Mortal Shots" },
 		{ id="rws", translated="Ranged Spec" },
 		{ id="barrage", translated="Barrage" },
-		{ id="humanoidslaying", translated="Humananoid" },
+		{ id="humanoidslaying", translated="Humanoid" },
 		{ id="monsterslaying", translated="Monster" },
 		{ id="savagestrikes", translated="Savage" },
 		{ id="survivalist", translated="Survivalist" },
