@@ -721,7 +721,7 @@ TheoryCraft_Buffs = {
 	{ text="Gain (%d+) mana every 2 seconds%.", type="manaperfive", amount="totem" },				-- Totems
 	{ text="Receives up to (%d+) extra healing from Holy Light spells", type="Holy Light", amount="hl", target = "target"},	-- Blessing of light
 	{ text="(%d+) extra healing from Flash of Light spells%.", type="Flash of Light", amount="fol", target = "target" },	-- Blessing of light
-	{ text="Holy Shock spell increased by 100%%", type="Holycritchance", amount=100 },				-- Divine Favour
+	{ text="Holy Shock spell increased by 100%%", type="Holycritchance", amount=100 },				-- Divine Favor
 	{ text="Holy Shock spell increased by 100%%", type="Holy Shockcritchance", amount=100 },			-- Divine Favor
 	{ text="Increases critical strike chance from Fire damage spells by (%d+)%%", type="Firecritchance" },		-- Combustion in 1.11
 	{ text="Spell effects increased by (%d+)%.", type="All" },							-- Spell Blasting
@@ -820,19 +820,19 @@ TheoryCraft_EquipEveryLine = {
 	{ text="Weapon Damage %+(%d+)", type="OffhandMax", slot="SecondaryHand" },	-- Weapon Damage enchant
 
 	{ text="%+(%d+) schoolname Spell Damage" },					-- of wrath items
-	{ text="schoolname Damage +(+%d+)" },						-- AQ Glove enchants
-	{ text="Healing and Spell Damage %+(%d+)", type="All", me=1 },			-- zg enchant
+	{ text="schoolname Damage %+(%d+)" },						-- AQ Glove enchants
+	{ text="Healing and Spell Damage %+(%d+)", type="All", me=1 },			-- Hoodoo Hex
 	{ text="%+(%d+) Healing", type="Healing" },					-- of healing items
 	{ text="%+(%d+) Damage and Healing Spells", type="All" },			-- of sorcery items
-	{ text="schoolname Spell Damage %+(%d+)", me=1 }, 				-- Winter's Might
-	{ text="Spell Damage %+(%d+)", type="All", me=1 }, 				-- Spell Damage +30 enchant
-	{ text="Healing Spells %+(%d+)", type="Healing" },				-- zg priest and healing enchant
-	{ text="++(%d+) Spell Damage and Healing", type="All" }, 			-- not sure
+	{ text="schoolname Spell Damage %+(%d+)", me=1 }, 				-- Enchant Weapon - Winter's Might
+	{ text="Spell Damage %+(%d+)", type="All", me=1 }, 				-- Enchant Weapon - Spell Power
+	{ text="Healing Spells %+(%d+)", type="Healing" },				-- Prophetic Aura
+	{ text="+(%d+) Spell Damage and Healing", type="All" }, 			-- Zandalar Signet of Mojo
 
 	{ text="Use: Restores 375 to 625 mana%.", type="manarestore", amount="500" },    -- Robe of the Archmage
 
-	{ text="Spell Hit %+(%d+)%%", type="Allhitchance" },				-- zg enchant
-	{ text="%/Hit %+(%d+)%%", type="Meleehitchance" },					-- Hunter Leg/Helm enchant
+	{ text="Spell Hit %+(%d+)%%", type="Allhitchance" },				-- Presence of Sight
+	{ text="%/Hit %+(%d+)%%", type="Meleehitchance" },					-- Falcon's Call
 
 	{ text="^.(%d+) mana every 5 sec%.", type="manaperfive" },			-- of restoration
 	{ text="Mana Regen %+(%d+)/", type="manaperfive" },				-- zg enchant

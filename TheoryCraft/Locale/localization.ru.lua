@@ -37,89 +37,86 @@ TheoryCraft_TooltipOrs = {
 }
 
 TheoryCraft_TooltipFormat = {
-	{show = true, 		left = "#c1,1,1#$spellname$", 		right = "#c0.5,0.5,0.5#Уровень $spellrank$"},
-	{show = true, 		left = "#c1,1,1#$wandlineleft2$", 	right = "#c1,1,1#$wandlineright2$"},
-	{show = true, 		left = "#c1,1,1#$wandlineleft3$", 	right = "#c1,1,1#$wandlineright3$"},
-	{show = "embedstyle1", 	left = "#c1,1,1#$wandlineleft4$", 	right = "Крит: #c0.9,0.9,1#$critchance,1$%#c1,1,1#"},
+	{show = true, 				left = "#c1,1,1#$spellname$", right = "#c0.5,0.5,0.5#Уровень $spellrank$"},
+	{show = true, 				left = "#c1,1,1#$wandlineleft2$", right = "#c1,1,1#$wandlineright2$"},
+	{show = true, 				left = "#c1,1,1#$wandlineleft3$", right = "#c1,1,1#$wandlineright3$"},
+	{show = "embedstyle1", 		left = "#c1,1,1#$wandlineleft4$", right = "Крит: #c0.9,0.9,1#$critchance,1$%#c1,1,1#"},
 	{show = "embedstyle1", inverse = true, left = "#c1,1,1#$wandlineleft4$"},
-	{show = true, 		left = "Мана: #c1,1,1#$basemanacost$", 	right = "#c1,1,1#$spellrange$"},
-	{show = "embedstyle1", 	left = "#c0.9,0.9,1##OR$dps$#c1,1,1# УВС/$hps$#c1,1,1# ИВСOR#", 
-			       right = "Крит: #c0.9,0.9,1#$critchance,1$%#c1,1,1#"},
-	{show = "embedstyle2", 	left = "#c0.9,0.9,1##OR$dpm,2$#c1,1,1# УЗМ/$hpm,2$#c1,1,1# ИЗМOR#", 
-			       right = "Крит: #c0.9,0.9,1#$critchance,1$%#c1,1,1#"},
-	{show = "embedstyle3", 	left = "#c0.9,0.9,1##OR$dps$#c1,1,1# УВС/$hpm,2$#c1,1,1# ИЗМOR#",  
-			       right = "Крит: #c0.9,0.9,1#$critchance,1$%#c1,1,1#"},
-	{show = true, 		left = "#c1,1,1#$basecasttime$", right = "#c1,1,1#$cooldown$"},
-	{show = true, 		left = "#c1,1,1#$cooldownremaining$",},
-	{show = "embed", 	left = "#c1,0.82745098,0##OR$description$/$basedescription$OR##WRAP#"},
+	{show = true, 				left = "Мана: #c1,1,1#$basemanacost$", right = "#c1,1,1#$spellrange$"},
+	{show = "embedstyle1", 		left = "#c0.9,0.9,1##OR$dps$#c1,1,1# УВС/$hps$#c1,1,1# ИВСOR#", right = "Крит: #c0.9,0.9,1#$critchance,1$%#c1,1,1#"},
+	{show = "embedstyle2", 		left = "#c0.9,0.9,1##OR$dpm,2$#c1,1,1# УЗМ/$hpm,2$#c1,1,1# ИЗМOR#", right = "Крит: #c0.9,0.9,1#$critchance,1$%#c1,1,1#"},
+	{show = "embedstyle3", 		left = "#c0.9,0.9,1##OR$dps$#c1,1,1# УВС/$hpm,2$#c1,1,1# ИЗМOR#", right = "Крит: #c0.9,0.9,1#$critchance,1$%#c1,1,1#"},
+	{show = true, 				left = "#c1,1,1#$basecasttime$", right = "#c1,1,1#$cooldown$"},
+	{show = true, 				left = "#c1,1,1#$cooldownremaining$",},
+	{show = "embed", 			left = "#c1,0.82745098,0##OR$description$/$basedescription$OR##WRAP#"},
 	{show = "embed", inverse = true, left = "#c1,0.82745098,0#$basedescription$#WRAP#"},
-	{show = true, 		left = "#c1,0.5,1#$outfitname$"},
-	{show = true, 		left = "Восполнение $evocation$ маны."},
-	{show = true, 		left = "Без баффов: $sealunbuffed,1$ увс"},
-	{show = true, 		left = "С это печатью: $sealbuffed,1$ увс"},
-	{show = "titles", 	left = "#c1,1,1##TITLE=Статистика Исцеления#"},
+	{show = true, 				left = "#c1,0.5,1#$outfitname$"},
+	{show = true, 				left = "Восполнение $evocation$ маны."},
+	{show = true, 				left = "Без баффов: $sealunbuffed,1$ увс"},
+	{show = true, 				left = "С это печатью: $sealbuffed,1$ увс"},
+	{show = "titles", 			left = "#c1,1,1##TITLE=Статистика Исцеления#"},
 	{show = "embed", inverse = true, left = "Исцеление: $healrange$"},
-	{show = "critwithdam", 	left = "Крит: $crithealchance,2$% (на $crithealrange$)"},
-	{show = "critwithoutdam", left = "Крит: $crithealchance,2$%"},
-	{show = "hps", 		left = "ИВС: $hps,1$#IF, $withhothps,1$IF#"},
-	{show = "dpsdam", 	left = "ИВС +исцеление: $hpsdam,1$ ($hpsdampercent,1$%)"},
+	{show = "critwithdam", 		left = "Крит: $crithealchance,2$% (на $crithealrange$)"},
+	{show = "critwithoutdam", 	left = "Крит: $crithealchance,2$%"},
+	{show = "hps", 				left = "ИВС: $hps,1$#IF, $withhothps,1$IF#"},
+	{show = "dpsdam", 			left = "ИВС +исцеление: $hpsdam,1$ ($hpsdampercent,1$%)"},
 	{show = "averagedamnocrit", left = "Среднее исцеление: $averagehealnocrit$"},
 	{show = "averagedamnocrit", left = "Тики по: $averagehealtick$"},
-	{show = "averagedam", 	left = "Среднее исцеление: $averageheal$"},
-	{show = "averagedam", 	left = "Тики по: $averagehealtick$"},
-	{show = "titles", 	left = "#c1,1,1##TITLE=Статистика Урона#"},
+	{show = "averagedam", 		left = "Среднее исцеление: $averageheal$"},
+	{show = "averagedam", 		left = "Тики по: $averagehealtick$"},
+	{show = "titles", 			left = "#c1,1,1##TITLE=Статистика Урона#"},
 	{show = "embed", inverse = true, left = "Попаданий: $dmgrange$"},
-	{show = "critmelee", 	left = "Крит: $critdmgchance,2$% (на $critdmgrange$)"},
-	{show = "critwithdam", 	left = "Крит: $critdmgchance,2$% (на $critdmgrange$)"},
-	{show = "sepignite", 	left = "С возгоранием: $igniterange$"},
-	{show = "critwithoutdam", left = "Крит: $critdmgchance,2$%"},
-	{show = "dps", 		left = "УВС: $dps,1$#IF, $withdotdps,1$IF#"},
-	{show = "dpsdam", 	left = "УВС +урон: $dpsdam,1$ ($dpsdampercent,1$%)"},
+	{show = "critmelee", 		left = "Крит: $critdmgchance,2$% (на $critdmgrange$)"},
+	{show = "critwithdam", 		left = "Крит: $critdmgchance,2$% (на $critdmgrange$)"},
+	{show = "sepignite", 		left = "С возгоранием: $igniterange$"},
+	{show = "critwithoutdam",	left = "Крит: $critdmgchance,2$%"},
+	{show = "dps", 				left = "УВС: $dps,1$#IF, $withdotdps,1$IF#"},
+	{show = "dpsdam", 			left = "УВС +урон: $dpsdam,1$ ($dpsdampercent,1$%)"},
 	{show = "averagedamnocrit", left = "Средний урон: $averagedamnocrit$"},
 	{show = "averagedamnocrit", left = "Тики по: $averagedamtick$"},
-	{show = "averagedam", 	left = "Средний урон: $averagedam$"},
-	{show = "averagedam", 	left = "Тики по: $averagedamtick$"},
-	{show = "titles", 	left = "#c1,1,1##TITLE=Множители:#"},
-	{show = "plusdam", 	left = "Основ. +$damorheal$: $plusdam$"},
-	{show = "damcoef", 	left = "Коэффициент +$damorheal$: $damcoef,1$%#IF, $damcoef2,1$%IF#"},
-	{show = "dameff", 	left = "Эффективность +$damorheal$: $dameff,1$%"},
-	{show = "damtodouble", 	left = "+$damorheal$ двойной: $damtodouble$"},
-	{show = "damfinal", 	left = "Итоговый +$damorheal$: $damfinal$#IF, $damfinal2$IF#"},
-	{show = "titles", 	left = "#c1,1,1##TITLE=Сопротивления:#"},
-	{show = "resists", 	left = "Рейтинг сопротивления ($resistlevel$): $resistrate$%"},
-	{show = "resists", 	left = "После уровня сопротивления: $dpsafterresists,1$ УВС"},
-	{show = "resists", 	left = "До: $penetration,1$ УВС (проникающий)"},
-	{show = "titles", 	left = "#c1,1,1##TITLE=Сравнения:#"},
-	{show = "nextcrit", 	left = "1% крита: +$nextcritheal,2$ среднее исцеление (экв: $nextcrithealequive,2$ +исцеление)"},
-	{show = "nextstr", 	left = "10 сил: +$nextstrdam,2$ среднее $hitorheal$ (экв: $nextstrdamequive,2$ $damorap$)"},
-	{show = "nextagi", 	left = "10 лов: +$nextagidam,2$ среднее $hitorheal$#IF (экв: $nextagidamequive,2$ $damorap$)IF#"},
-	{show = "nextcrit", 	left = "1% крита: +$nextcritdam,2$ среднее $hitorheal$#IF (экв: $nextcritdamequive,2$ $damorap$)IF#"},
-	{show = "nexthit", 	left = "1% меткости: +$nexthitdam,2$ среднее $hitorheal$#IF (экв: $nexthitdamequive,2$ $damorap$)IF#"},
-	{show = "nextpen", 	left = "10 прон: #OR$dontshowupto$/До OR#+$nextpendam,2$ среднее $hitorheal$#IF (экв: $nextpendamequive,2$ $damorap$)IF#"},
-	{show = "titles", 	left = "#c1,1,1##TITLE=Вращение:#"},
-	{show = true, 		left = "MS рот. ($msrotationlength,1$ sec) увс: $msrotationdps,1$"},
-	{show = true, 		left = "AS рот. ($asrotationlength,1$ sec) увс: $asrotationdps,1$"},
-	{show = true, 		left = "MS/Arcane рот. увс: $arcrotationdps,1$"},
-	{show = "titles", 	left = "#c1,1,1##TITLE=Итоговые сравнения:#"},
-	{show = "nextagi", 	left = "10 лов: +$nextagidps,2$ MS рот. увс#IF (экв: $nextagidpsequive,2$ $damorap$)IF#"},
-	{show = "nextcrit", 	left = "1% крита: +$nextcritdps,2$ MS рот. увс (экв: $nextcritdpsequive,2$ $damorap$)"},
-	{show = "nexthit", 	left = "1% меткости: +$nexthitdps,2$ MS рот. увс (экв: $nexthitdpsequive,2$ $damorap$)"},
-	{show = "titles", 	left = "#c1,1,1##TITLE=Эффективность:#"},
-	{show = "mana", 	left = "Реальная стоимость маны: $manacost,1$"},
-	{show = "dpm", 		left = "УЗМ: $dpm,2$#IF, $withdotdpm,2$IF#"},
-	{show = "dpsmana", 	left = "УВС/Мана: $dpsmana,3$"},
-	{show = "hpm", 		left = "ИЗМ: $hpm,2$#IF, $withhothpm,2$IF#"},
-	{show = "lifetap", 	left = "Жизнеотвод УВЧ: $lifetapdpm,1$"},
-	{show = "lifetap", 	left = "Жизнеотвод ИВЧ: $lifetaphpm,1$"},
-	{show = "lifetap", 	left = "Жизнеотвод УВС: $lifetapdps,1$"},
-	{show = "lifetap", 	left = "Жизнеотвод ИВС: $lifetaphps,1$"},
-	{show = "showregenheal", left = "10 сек. восстановление: +$regenheal$ исцеления"},
-	{show = "showregenheal", left = "10 сек. восстановление во время применения: +$icregenheal$ исцеления"},
-	{show = "showregendam", left = "10 сек. восстановление: +$regendam$ урона"},
-	{show = "showregendam", left = "10 сек. восстановление во время применения: +$icregendam$ урона"},
-	{show = "max", 		left = "Исцеление до конца маны: $maxoomheal$ ($maxoomhealtime$ сек.)"},
-	{show = "max", 		left = "Урон до конца маны: $maxoomdam$ ($maxoomdamtime$ сек.)"},
-	{show = "maxevoc", 	left = "Урон до конца маны w/ прилив+агат: $maxevocoomdam$ ($maxevocoomdamtime$ сек.)"},
+	{show = "averagedam", 	 	left = "Средний урон: $averagedam$"},
+	{show = "averagedam", 	 	left = "Тики по: $averagedamtick$"},
+	{show = "titles", 		 	left = "#c1,1,1##TITLE=Множители:#"},
+	{show = "plusdam", 		 	left = "Основ. +$damorheal$: $plusdam$"},
+	{show = "damcoef", 		 	left = "Коэффициент +$damorheal$: $damcoef,1$%#IF, $damcoef2,1$%IF#"},
+	{show = "dameff", 		 	left = "Эффективность +$damorheal$: $dameff,1$%"},
+	{show = "damtodouble", 	 	left = "+$damorheal$ двойной: $damtodouble$"},
+	{show = "damfinal",		 	left = "Итоговый +$damorheal$: $damfinal$#IF, $damfinal2$IF#"},
+	{show = "titles", 		 	left = "#c1,1,1##TITLE=Сопротивления:#"},
+	{show = "resists", 		 	left = "Рейтинг сопротивления ($resistlevel$): $resistrate$%"},
+	{show = "resists", 		 	left = "После уровня сопротивления: $dpsafterresists,1$ УВС"},
+	{show = "resists", 		 	left = "До: $penetration,1$ УВС (проникающий)"},
+	{show = "titles", 		 	left = "#c1,1,1##TITLE=Сравнения:#"},
+	{show = "nextcrit", 	 	left = "1% крита: +$nextcritheal,2$ среднее исцеление (экв: $nextcrithealequive,2$ +исцеление)"},
+	{show = "nextstr", 		 	left = "10 сил: +$nextstrdam,2$ среднее $hitorheal$ (экв: $nextstrdamequive,2$ $damorap$)"},
+	{show = "nextagi", 		 	left = "10 лов: +$nextagidam,2$ среднее $hitorheal$#IF (экв: $nextagidamequive,2$ $damorap$)IF#"},
+	{show = "nextcrit", 	 	left = "1% крита: +$nextcritdam,2$ среднее $hitorheal$#IF (экв: $nextcritdamequive,2$ $damorap$)IF#"},
+	{show = "nexthit", 		 	left = "1% меткости: +$nexthitdam,2$ среднее $hitorheal$#IF (экв: $nexthitdamequive,2$ $damorap$)IF#"},
+	{show = "nextpen", 		 	left = "10 прон: #OR$dontshowupto$/До OR#+$nextpendam,2$ среднее $hitorheal$#IF (экв: $nextpendamequive,2$ $damorap$)IF#"},
+	{show = "titles", 		 	left = "#c1,1,1##TITLE=Вращение:#"},
+	{show = true, 			 	left = "MS рот. ($msrotationlength,1$ sec) увс: $msrotationdps,1$"},
+	{show = true, 			 	left = "AS рот. ($asrotationlength,1$ sec) увс: $asrotationdps,1$"},
+	{show = true, 			 	left = "MS/Arcane рот. увс: $arcrotationdps,1$"},
+	{show = "titles", 		 	left = "#c1,1,1##TITLE=Итоговые сравнения:#"},
+	{show = "nextagi", 		 	left = "10 лов: +$nextagidps,2$ MS рот. увс#IF (экв: $nextagidpsequive,2$ $damorap$)IF#"},
+	{show = "nextcrit", 	 	left = "1% крита: +$nextcritdps,2$ MS рот. увс (экв: $nextcritdpsequive,2$ $damorap$)"},
+	{show = "nexthit", 		 	left = "1% меткости: +$nexthitdps,2$ MS рот. увс (экв: $nexthitdpsequive,2$ $damorap$)"},
+	{show = "titles", 		 	left = "#c1,1,1##TITLE=Эффективность:#"},
+	{show = "mana", 		 	left = "Реальная стоимость маны: $manacost,1$"},
+	{show = "dpm", 			 	left = "УЗМ: $dpm,2$#IF, $withdotdpm,2$IF#"},
+	{show = "dpsmana", 		 	left = "УВС/Мана: $dpsmana,3$"},
+	{show = "hpm", 			 	left = "ИЗМ: $hpm,2$#IF, $withhothpm,2$IF#"},
+	{show = "lifetap", 		 	left = "Жизнеотвод УВЧ: $lifetapdpm,1$"},
+	{show = "lifetap", 		 	left = "Жизнеотвод ИВЧ: $lifetaphpm,1$"},
+	{show = "lifetap", 		 	left = "Жизнеотвод УВС: $lifetapdps,1$"},
+	{show = "lifetap", 		 	left = "Жизнеотвод ИВС: $lifetaphps,1$"},
+	{show = "showregenheal", 	left = "10 сек. восстановление: +$regenheal$ исцеления"},
+	{show = "showregenheal", 	left = "10 сек. восстановление во время применения: +$icregenheal$ исцеления"},
+	{show = "showregendam",	 	left = "10 сек. восстановление: +$regendam$ урона"},
+	{show = "showregendam",  	left = "10 сек. восстановление во время применения: +$icregendam$ урона"},
+	{show = "max", 			 	left = "Исцеление до конца маны: $maxoomheal$ ($maxoomhealtime$ сек.)"},
+	{show = "max", 			 	left = "Урон до конца маны: $maxoomdam$ ($maxoomdamtime$ сек.)"},
+	{show = "maxevoc", 		 	left = "Урон до конца маны w/ прилив+агат: $maxevocoomdam$ ($maxevocoomdamtime$ сек.)"},
 }
 
 
@@ -128,135 +125,135 @@ TheoryCraft_MeleeComboReader = "(%d+) прием(.-): (%d+)%-(%d+) ед. уро�
 TheoryCraft_MeleeComboReplaceWith = "$приема$ прием%1: %2%-%3 ед. урона"
 
 TheoryCraft_MeleeMinMaxReader = {
-	{ pattern = "(%d+)%% от вашей силы атаки",							-- Bloodthirst
+	{ pattern = "(%d+)%% от вашей силы атаки",								-- Bloodthirst
 		type={"bloodthirstmult"} },
-	{ pattern = "наносящий противнику (%d+) %- (%d+) ед%. урона (величина зависит от показателя блокирования щита)",				-- Shield Slam
+	{ pattern = "наносящий противнику (%d+) %- (%d+) ед%. урона (величина зависит от показателя блокирования щита)", -- Shield Slam
 		type={"mindamage", "maxdamage"} },
-	{ pattern = "(%d+)%% урона",									-- Shred/Ravage
+	{ pattern = "(%d+)%% урона",											-- Shred/Ravage
 		type={"backstabmult"} },
-	{ pattern = "(%d+)%% урона от оружия",								-- Backstab
+	{ pattern = "(%d+)%% урона от оружия",									-- Backstab
 		type={"backstabmult"} },
 	{ pattern = "и дополнительно (%d+)",									-- Backstab
 		type={"addeddamage"} },
-	{ pattern = "следующей атаки друида на (%d+) ед",							-- Maul
+	{ pattern = "следующей атаки друида на (%d+) ед",						-- Maul
 		type={"addeddamage"} },
-	{ pattern = "нанося дополнительно (%d+) ед%. урона",							-- Claw
+	{ pattern = "нанося дополнительно (%d+) ед%. урона",					-- Claw
 		type={"addeddamage"} },
-	{ pattern = "наносящий (%d+) ед%. урона сверх обычного",							-- Sinister Strike
+	{ pattern = "наносящий (%d+) ед%. урона сверх обычного",				-- Sinister Strike
 		type={"addeddamage"} },
-	{ pattern = "ближнего боя, наносящая дополнительно (%d+) единиц урона",							-- Aimed Shot
+	{ pattern = "ближнего боя, наносящая дополнительно (%d+) единиц урона",	-- Aimed Shot
 		type={"addeddamage"} },
-	{ pattern = "наносящий цели на (%d+) ед%. урона больше",							-- Aimed Shot
+	{ pattern = "наносящий цели на (%d+) ед%. урона больше",				-- Aimed Shot
 		type={"addeddamage"} },
-	{ pattern = "наносящих дополнительно (%d+) ед%. урона",							-- Multi-Shot
+	{ pattern = "наносящих дополнительно (%d+) ед%. урона",					-- Multi-Shot
 		type={"addeddamage"} },
-	{ pattern = "нанося им (%d+) ед%. урона%.",							-- Swipe
+	{ pattern = "нанося им (%d+) ед%. урона%.",								-- Swipe
 		type={"addeddamage"} },
-	{ pattern = "наносящий (%d+) ед%. урона,",							-- Mocking Blow
+	{ pattern = "наносящий (%d+) ед%. урона,",								-- Mocking Blow
 		type={"addeddamage"} },
-	{ pattern = "нанося им (%d+) ед%. урона",							-- Thunder Clap
+	{ pattern = "нанося им (%d+) ед%. урона",								-- Thunder Clap
 		type={"addeddamage"} },
 
 }
 
 TheoryCraft_MeleeMinMaxReplacer = {
-	{ search = " наносящий противнику %d+ - %d+ ед%. урона (величина зависит от показателя блокирования щита) ",				-- Shield Slam
+	{ search = " наносящий противнику %d+ - %d+ ед%. урона (величина зависит от показателя блокирования щита) ", -- Shield Slam
 	  replacewith = " наносящий противнику $damage$ ед. урона " },
-	{ search = " урон, равный %d+%% стандартного урона оружия, и ",							-- Scattershot / Ghostly
+	{ search = " урон, равный %d+%% стандартного урона оружия, и ",						-- Scattershot / Ghostly
 	  replacewith = " урон, равный $damage$ стандартного урона оружия, и " },
-	{ search = " урон, равный %d+%% от вашей силы атаки",				-- Bloodthirst
+	{ search = " урон, равный %d+%% от вашей силы атаки",								-- Bloodthirst
 	  replacewith = " урон, равный $damage$ от вашей силы атаки" },
-	{ search = "Увеличивает урон следующей атаки друида на %d+ ед",					-- Maul
+	{ search = "Увеличивает урон следующей атаки друида на %d+ ед",						-- Maul
 	  replacewith = "Ваша следующая атака нанесет $damage$ ед. урона" },
-	{ search = " нанося дополнительно %d+% ед%. урона",							-- Claw
+	{ search = " нанося дополнительно %d+% ед%. урона",									-- Claw
 	  replacewith = " нанося дополнительно $damage$ ед. урона" },
-	{ search = " наносящий цели %d+%% урона от оружия и дополнительно %d+ ед%. урона",				-- Backstab
+	{ search = " наносящий цели %d+%% урона от оружия и дополнительно %d+ ед%. урона",  -- Backstab
 	  replacewith = " наносящий цели $damage$ урона от оружия" },
-	{ search = " нанося ему %d+%% урона и еще %d+ ед%. урона",					-- Shred/Ravage
+	{ search = " нанося ему %d+%% урона и еще %d+ ед%. урона",							-- Shred/Ravage
 	  replacewith = " нанося ему $damage$ урона" },
-	{ search = " наносящий %d+ ед%. урона сверх обычного урона оружия",			-- Sinister Strike
+	{ search = " наносящий %d+ ед%. урона сверх обычного урона оружия",					-- Sinister Strike
 	  replacewith = " наносящий $damage$ ед. урона" },
-	{ search = " атака ближнего боя, наносящая дополнительно %d+ единиц урона",						-- Aimed Shot
+	{ search = " атака ближнего боя, наносящая дополнительно %d+ единиц урона",			-- Aimed Shot
 	  replacewith = " наносит $damage$ ед. урона по цели" },
-	{ search = " наносящий цели на %d+ ед%. урона больше обычного",							-- Aimed Shot
+	{ search = " наносящий цели на %d+ ед%. урона больше обычного",						-- Aimed Shot
 	  replacewith = " наносящий цели на $damage$ ед. урона больше обычного" },
-	{ search = " и наносящих дополнительно %d+ ед%. урона",							-- Multi-Shot
+	{ search = " и наносящих дополнительно %d+ ед%. урона",								-- Multi-Shot
 	  replacewith = " дополнительно $damage$ ед. урона" },
-	{ search = " урон от оружия, усиленный на %d+ ед%., и ",						-- Mortal Strike
+	{ search = " урон от оружия, усиленный на %d+ ед%., и ",							-- Mortal Strike
 	  replacewith = " усиленный на $damage$ ед., и " },
-	{ search = " наносящая увеличенный на %d+ ед%. урон ",						-- Cleave
+	{ search = " наносящая увеличенный на %d+ ед%. урон ",								-- Cleave
 	  replacewith = " наносящая увеличенный на $damage$ ед. урон " },
 	{ search = " обычный урон от оружия, усиленный на %d+ ед",							-- Overpower
 	  replacewith = " обычный урон от оружия, усиленный на $damage$ ед" },
-	{ search = " заблокировать атаку противника в ближнем или дальнем бою%.",					-- Block
+	{ search = " заблокировать атаку противника в ближнем или дальнем бою%.",			-- Block
 	  replacewith = " заблокировать атаку противника в ближнем или дальнем бою, получаемый урон снижен $blockvalue$." },
-	{ search = "Эта атака наносит %d+%% от урона оружия ",						-- Riposte
+	{ search = "Эта атака наносит %d+%% от урона оружия ",								-- Riposte
 	  replacewith = "Эта атака наносит $damage$ ед. урона " },
-	{ search = "нанося им (%d+) ед. урона%.",								-- Swipe
+	{ search = "нанося им (%d+) ед. урона%.",											-- Swipe
 	  replacewith = "нанося им $damage$ ед. урона." },
-	{ search = "удар, наносящий (%d+) ед%. урона,",								-- Mocking Blow
+	{ search = "удар, наносящий (%d+) ед%. урона,",										-- Mocking Blow
 	  replacewith = "удар, наносящий $damage$ ед. урона," },
-	{ search = "противников, нанося им (%d+) ед%. урона",							-- Thunder Clap
+	{ search = "противников, нанося им (%d+) ед%. урона",								-- Thunder Clap
 	  replacewith = "противников, нанося им $damage$ ед. урона" },
-	{ search = " нанося каждому противнику урон от оружия ",						-- Whirlwind
+	{ search = " нанося каждому противнику урон от оружия ",							-- Whirlwind
 	  replacewith = " нанося каждому противнику $damage$ ед. урона " },
 }
 
 TheoryCraft_SpellMinMaxReader = {
 	{ pattern = "наносящие заклинателю (%d+) - (%d+) ед%. урона от огня, а его противникам – (%d+) - (%d+) ед%. урона от огня",	-- Hellfire
 		type={"mindamage", "maxdamage", "mindamage", "maxdamage"} },
-	{ pattern = "наносящие заклинателю (%d+) ед%. урона от огня, а его противникам – (%d+) ед%. урона от огня",			-- Hellfire
+	{ pattern = "наносящие заклинателю (%d+) ед%. урона от огня, а его противникам – (%d+) ед%. урона от огня", -- Hellfire
 		type={"bothdamage", "bothdamage"} },
 
-	{ pattern = "с помощью заклинания, получает (%d+) ед%. урона от сил природы%.",						-- Lightning Shield
+	{ pattern = "с помощью заклинания, получает (%d+) ед%. урона от сил природы%.", -- Lightning Shield
 		type={"bothdamage"} },
 
-	{ pattern = "и наносящий ему (%d+) ед%. урона от сил природы",							-- Insect Swarm
+	{ pattern = "и наносящий ему (%d+) ед%. урона от сил природы", -- Insect Swarm
 		type={"bothdamage"} },
 
-	{ pattern = "к паническому бегству в течение 3 сек%. и нанесение ему (%d+) ед%. урона от темной магии",					-- Death Coil
+	{ pattern = "к паническому бегству в течение 3 сек%. и нанесение ему (%d+) ед%. урона от темной магии", -- Death Coil
 		type={"bothdamage"} },
 
-	{ pattern = "(%d+) - (%d+)(.+)и еще (%d+) - (%d+)",					-- Generic Hybrid spell
+	{ pattern = "(%d+) - (%d+)(.+)и еще (%d+) - (%d+)",						-- Generic Hybrid spell
 		type={"mindamage", "maxdamage", "tmptext", "dotmindamage", "dotmaxdamage"} },
-	{ pattern = "(%d+) - (%d+)(.+)и еще (%d+)",						-- Generic Hybrid spell
+	{ pattern = "(%d+) - (%d+)(.+)и еще (%d+)",								-- Generic Hybrid spell
 		type={"mindamage", "maxdamage", "tmptext", "dotbothdamage"} },
-	{ pattern = "(%d+)(.+)и еще (%d+) - (%d+)",						-- Generic Hybrid spell
+	{ pattern = "(%d+)(.+)и еще (%d+) - (%d+)",								-- Generic Hybrid spell
 		type={"bothdamage", "tmptext", "dotmindamage", "dotmaxdamage"} },
-	{ pattern = "(%d+)(.+)и еще (%d+)",							-- Generic Hybrid spell
+	{ pattern = "(%d+)(.+)и еще (%d+)",										-- Generic Hybrid spell
 		type={"bothdamage", "tmptext", "dotbothdamage"} },
 
-	{ pattern = "(%d+) - (%d+)(.+)и дополнительно (%d+) - (%d+)",					-- Generic Hybrid spell
+	{ pattern = "(%d+) - (%d+)(.+)и дополнительно (%d+) - (%d+)",			-- Generic Hybrid spell
 		type={"mindamage", "maxdamage", "tmptext", "dotmindamage", "dotmaxdamage"} },
-	{ pattern = "(%d+) - (%d+)(.+)и дополнительно (%d+)",						-- Generic Hybrid spell
+	{ pattern = "(%d+) - (%d+)(.+)и дополнительно (%d+)",					-- Generic Hybrid spell
 		type={"mindamage", "maxdamage", "tmptext", "dotbothdamage"} },
-	{ pattern = "(%d+)(.+)и дополнительно (%d+) - (%d+)",						-- Generic Hybrid spell
+	{ pattern = "(%d+)(.+)и дополнительно (%d+) - (%d+)",					-- Generic Hybrid spell
 		type={"bothdamage", "tmptext", "dotmindamage", "dotmaxdamage"} },
 	{ pattern = "(%d+)(.+)и дополнительно (%d+)",							-- Generic Hybrid spell
 		type={"bothdamage", "tmptext", "dotbothdamage"} },
 
 	{ pattern = "(%d+) - (%d+)(.+) и (%d+) - (%d+)",						-- Flame Shock
 		type={"mindamage", "maxdamage", "tmptext", "dotmindamage", "dotmaxdamage"} },
-	{ pattern = "(%d+) - (%d+)(.+) и (%d+)",							-- Flame Shock
+	{ pattern = "(%d+) - (%d+)(.+) и (%d+)",								-- Flame Shock
 		type={"mindamage", "maxdamage", "tmptext", "dotbothdamage"} },
 	{ pattern = "наносит (%d+)(.+) и (%d+) - (%d+)",						-- Flame Shock
 		type={"bothdamage", "tmptext", "dotmindamage", "dotmaxdamage"} },
-	{ pattern = "наносит (%d+)(.+) и (%d+)",							-- Flame Shock
+	{ pattern = "наносит (%d+)(.+) и (%d+)",								-- Flame Shock
 		type={"bothdamage", "tmptext", "dotbothdamage"} },
 
 	{ pattern = "(%d+) - (%d+) ед%. урона от огня",							-- Magma totem
 		type={"mindamage", "maxdamage"} },
-	{ pattern = "(%d+) ед%. урона от огня",								-- Magma totem
+	{ pattern = "(%d+) ед%. урона от огня",									-- Magma totem
 		type={"bothdamage"} },
 
-	{ pattern = "который восполняет (%d+) - (%d+) ед%. здоровья ",							-- Healing Stream totem
+	{ pattern = "который восполняет (%d+) - (%d+) ед%. здоровья ",			-- Healing Stream totem
 		type={"mindamage", "maxdamage"} },
-	{ pattern = "который восполняет (%d+) ед%. здоровья ",								-- Healing Stream totem
+	{ pattern = "который восполняет (%d+) ед%. здоровья ",					-- Healing Stream totem
 		type={"bothdamage"} },
 
-	{ pattern = "(%d+) - (%d+)",									-- Generic Normal spell
+	{ pattern = "(%d+) - (%d+)",											-- Generic Normal spell
 		type={"mindamage", "maxdamage"} },
-	{ pattern = "(%d+)",										-- Generic no damage range spell
+	{ pattern = "(%d+)",													-- Generic no damage range spell
 		type={"bothdamage"} },
 }
 
@@ -767,81 +764,81 @@ TheoryCraft_Debuffs = {
 -- Dot Duration is read from here
 
 TheoryCraft_DotDurations = {
-	{ text=" за (%d+) сек%.", amount="n" },				-- Shadow Word: Pain, Corruption, Immolate, Renew
-	{ text="раз в секунду в течение (%d+) сек%.", amount="n" },			-- Volley
+	{ text=" за (%d+) сек%.", amount="n" },						-- Shadow Word: Pain, Corruption, Immolate, Renew
+	{ text="раз в секунду в течение (%d+) сек%.", amount="n" }, -- Volley
 	{ text=" seconds for (%d+) sec%.", amount="n" },			-- Tranquility
 	{ text="each second for (%d+) sec%.", amount="n" },			-- Arcane Missiles
-	{ text="Время действия %- (%d+) сек%.", amount="n" },				-- Drain and Siphon Life
-	{ text="спустя 1 мин%.", amount="60" },					-- Curse of Doom
+	{ text="Время действия %- (%d+) сек%.", amount="n" },		-- Drain and Siphon Life
+--[[]]	{ text="спустя 1 мин%.", amount="60" },						-- Curse of Doom
 }
 
 -- Checks every line for these
 
 TheoryCraft_EquipEveryRight = {
 	{ text="^Скорость (%d+%.?%d+)", type="OffhandSpeed", slot="SecondaryHand" },	-- Weapon Damage
-	{ text="^Скорость (%d+%.?%d+)", type="MainSpeed", slot="MainHand" },		-- Weapon Damage
-	{ text="^Скорость (%d+%.?%d+)", type="RangedSpeed", slot="Ranged" },		-- Weapon Damage
-	{ text="^Кинжал", type="MeleeAPMult", amount=-0.7, slot="MainHand" },		-- Weapon Damage
-	{ text="^Кинжал", type="DaggerEquipped", amount=1, slot="MainHand" }	,	-- Used for dagger spec
-	{ text="^Кистевое", type="FistEquipped", amount=1, slot="MainHand" },	-- Used for fist spec
-	{ text="^Топор", type="AxeEquipped", amount=1, slot="MainHand" },			-- Used for Axe Spec
+	{ text="^Скорость (%d+%.?%d+)", type="MainSpeed", slot="MainHand" },			-- Weapon Damage
+	{ text="^Скорость (%d+%.?%d+)", type="RangedSpeed", slot="Ranged" },			-- Weapon Damage
+	{ text="^Кинжал", type="MeleeAPMult", amount=-0.7, slot="MainHand" },			-- Weapon Damage
+	{ text="^Кинжал", type="DaggerEquipped", amount=1, slot="MainHand" }	,		-- Used for dagger spec
+	{ text="^Кистевое", type="FistEquipped", amount=1, slot="MainHand" },			-- Used for fist spec
+	{ text="^Топор", type="AxeEquipped", amount=1, slot="MainHand" },				-- Used for Axe Spec
 	{ text="^Древковое", type="PolearmEquipped", amount=1, slot="MainHand" },		-- Used for Polearm Spec
-	{ text="^Щит", type="ShieldEquipped", amount=1, slot="SecondaryHand" },	-- Used for Block
+	{ text="^Щит", type="ShieldEquipped", amount=1, slot="SecondaryHand" },			-- Used for Block
 }
 
 TheoryCraft_EquipEveryLine = {
-	{ text=".+Block Value %+(%d+)", type="BlockValueReport" }, -- Block Value (ZG Enchant)
-	{ text="Ranged Attack Power %+(%d+)", type="RangedAttackPowerReport" }, 	-- Hunter Leg/Helm enchant
---[[]]	{ text="Блокирование: (%d+)", type="BlockValueReport" }, 				-- Block Value (shield)
+	{ text=".+%+(%d+) к блокированию", type="BlockValueReport" }, 					-- Block Value (ZG Enchant)
+	{ text="%+(%d+) к силе атаки дальнего боя", type="RangedAttackPowerReport" }, 	-- Hunter Leg/Helm enchant
+--[[]]	{ text="Блокирование: (%d+)", type="BlockValueReport" }, 						-- Block Value (shield)
 
-	{ text="%+(%d+) Attack Power", type="AttackPowerReport" }, 			-- Attack power
+	{ text="%+(%d+) Attack Power", type="AttackPowerReport" }, 						-- Attack power
 
 --[[]]	{ text="Добавляет (%d+%.?%d+) ед%. урона в секунду", type="AmmoDPS", slot="Ammo" },	-- Arrows
 
-	{ text="Правая рука", type="MeleeAPMult", amount="2.4", slot="MainHand" },	-- Weapon Damage
-	{ text="Одноручное", type="MeleeAPMult", amount="2.4", slot="MainHand" },	-- Weapon Damage
-	{ text="Двуручное", type="MeleeAPMult", amount="3.3", slot="MainHand" },	-- Weapon Damage
-	{ text="(%d+) %- %d+", type="RangedMin", slot="Ranged" },			-- Weapon Damage
-	{ text="%d+ %- (%d+)", type="RangedMax", slot="Ranged" }, 			-- Weapon Damage
---[[]]	{ text="Прицел %(%+(%d+) к урону%)", type="RangedMin", slot="Ranged" },		-- Weapon Damage enchant
---[[]]	{ text="Прицел %(%+(%d+) к урону%)", type="RangedMax", slot="Ranged" },		-- Weapon Damage enchant
-	{ text="(%d+) %- %d+", type="MeleeMin", slot="MainHand" },			-- Weapon Damage
-	{ text="%d+ %- (%d+)", type="MeleeMax", slot="MainHand" }, 			-- Weapon Damage
-	{ text="Weapon Damage %+(%d+)", type="MeleeMin", slot="MainHand" },		-- Weapon Damage enchant
-	{ text="Weapon Damage %+(%d+)", type="MeleeMax", slot="MainHand" },		-- Weapon Damage enchant
-	{ text="(%d+) %- %d+", type="OffhandMin", slot="SecondaryHand" },		-- Weapon Damage
-	{ text="%d+ %- (%d+)", type="OffhandMax", slot="SecondaryHand" }, 		-- Weapon Damage
-	{ text="Weapon Damage %+(%d+)", type="OffhandMin", slot="SecondaryHand" },	-- Weapon Damage enchant
-	{ text="Weapon Damage %+(%d+)", type="OffhandMax", slot="SecondaryHand" },	-- Weapon Damage enchant
+	{ text="Правая рука", type="MeleeAPMult", amount="2.4", slot="MainHand" },		-- Weapon Damage
+	{ text="Одноручное", type="MeleeAPMult", amount="2.4", slot="MainHand" },		-- Weapon Damage
+	{ text="Двуручное", type="MeleeAPMult", amount="3.3", slot="MainHand" },		-- Weapon Damage
+	{ text="(%d+) %- %d+", type="RangedMin", slot="Ranged" },						-- Weapon Damage
+	{ text="%d+ %- (%d+)", type="RangedMax", slot="Ranged" }, 						-- Weapon Damage
+--[[]]	{ text="Прицел %(%+(%d+) к урону%)", type="RangedMin", slot="Ranged" },			-- Weapon Damage enchant
+--[[]]	{ text="Прицел %(%+(%d+) к урону%)", type="RangedMax", slot="Ranged" },			-- Weapon Damage enchant
+	{ text="(%d+) %- %d+", type="MeleeMin", slot="MainHand" },						-- Weapon Damage
+	{ text="%d+ %- (%d+)", type="MeleeMax", slot="MainHand" }, 						-- Weapon Damage
+	{ text="Weapon Damage %+(%d+)", type="MeleeMin", slot="MainHand" },				-- Weapon Damage enchant
+	{ text="Weapon Damage %+(%d+)", type="MeleeMax", slot="MainHand" },				-- Weapon Damage enchant
+	{ text="(%d+) %- %d+", type="OffhandMin", slot="SecondaryHand" },				-- Weapon Damage
+	{ text="%d+ %- (%d+)", type="OffhandMax", slot="SecondaryHand" }, 				-- Weapon Damage
+	{ text="Weapon Damage %+(%d+)", type="OffhandMin", slot="SecondaryHand" },		-- Weapon Damage enchant
+	{ text="Weapon Damage %+(%d+)", type="OffhandMax", slot="SecondaryHand" },		-- Weapon Damage enchant
 
-	{ text="%+(%d+) schoolname Spell Damage" },					-- of wrath items
-	{ text="schoolname Damage +(+%d+)" },						-- AQ Glove enchants
-	{ text="Healing and Spell Damage %+(%d+)", type="All", me=1 },			-- zg enchant
-	{ text="%+(%d+) Healing", type="Healing" },					-- of healing items
-	{ text="%+(%d+) Damage and Healing Spells", type="All" },			-- of sorcery items
-	{ text="schoolname Spell Damage %+(%d+)", me=1 }, 				-- Winter's Might
-	{ text="Spell Damage %+(%d+)", type="All", me=1 }, 				-- Spell Damage +30 enchant
-	{ text="Healing Spells %+(%d+)", type="Healing" },				-- zg priest and healing enchant
-	{ text="++(%d+) Spell Damage and Healing", type="All" }, 			-- not sure
+	{ text="%+(%d+) schoolname Spell Damage" },										-- of wrath items
+	{ text="%+(%d+) к урону от заклинаний schoolname" },							-- AQ Glove enchants
+	{ text="%+(%d+) к лечению и урону от заклинаний", type="All", me=1 },			-- Hoodoo Hex
+	{ text="%+(%d+) Healing", type="Healing" },										-- of healing items
+	{ text="%+(%d+) Damage and Healing Spells", type="All" },						-- of sorcery items
+	{ text="%+(%d+) к урону от заклинаний schoolname", me=1 }, 						-- Enchant Weapon - Winter's Might
+	{ text="%+(%d+) к урону от заклинаний", type="All", me=1 }, 					-- Enchant Weapon - Spell Power
+	{ text="%+(%d+) к лечению", type="Healing" },									-- Prophetic Aura
+	{ text="+(%d+) к урону от заклинаний и лечению", type="All" }, 					-- Zandalar Signet of Mojo
 
-	{ text="Use: Restores 375 to 625 mana%.", type="manarestore", amount="500" },    -- Robe of the Archmage
+	{ text="Использование: Восполняет 375 - 625 ед%. маны%.", type="manarestore", amount="500" }, -- Robe of the Archmage [spell 18385]
 
-	{ text="Spell Hit %+(%d+)%%", type="Allhitchance" },				-- zg enchant
-	{ text="%/Hit %+(%d+)%%", type="Meleehitchance" },					-- Hunter Leg/Helm enchant
+	{ text="Spell Hit %+(%d+)%%", type="Allhitchance" },							-- Presence of Sight
+	{ text="%/%+(%d+)%% к меткости", type="Meleehitchance" },						-- Falcon's Call
 
-	{ text="^.(%d+) mana every 5 sec%.", type="manaperfive" },			-- of restoration
-	{ text="Mana Regen %+(%d+)/", type="manaperfive" },				-- zg enchant
-	{ text="Mana Regen (%d+) per 5 sec%.", type="manaperfive" },			-- bracers healing enchant
+	{ text="^.(%d+) mana every 5 sec%.", type="manaperfive" },						-- of restoration
+	{ text="Mana Regen %+(%d+)/", type="manaperfive" },								-- zg enchant
+	{ text="Mana Regen (%d+) per 5 sec%.", type="manaperfive" },					-- bracers healing enchant
 
-	{ text="^Сверкающее масло маны", type="manaperfive", amount="12" }, 		-- Enchanting oils
-	{ text="^Сверкающее масло маны", type="Healing", amount="25" }, 			-- Enchanting oils
+	{ text="^Сверкающее масло маны", type="manaperfive", amount="12" }, 			-- Enchanting oils
+	{ text="^Сверкающее масло маны", type="Healing", amount="25" }, 				-- Enchanting oils
 	{ text="^Сверкающее волшебное масло", type="Allcritchance", amount="1" }, 		-- Enchanting oils
 	{ text="^Сверкающее волшебное масло", type="Damage", amount="36" }, 			-- Enchanting oils
-	{ text="^Слабое масло маны", type="manaperfive", amount="4" }, 			-- Enchanting oils
-	{ text="^Простое масло маны", type="manaperfive", amount="8" }, 			-- Enchanting oils
-	{ text="^Слабое волшебное масло", type="Damage", amount="8" }, 			-- Enchanting oils
-	{ text="^Простое волшебное масло", type="Damage", amount="16" }, 			-- Enchanting oils
-	{ text="^Волшебное масло", type="Damage", amount="24" }, 				-- Enchanting oils
+	{ text="^Слабое масло маны", type="manaperfive", amount="4" }, 					-- Enchanting oils
+	{ text="^Простое масло маны", type="manaperfive", amount="8" }, 				-- Enchanting oils
+	{ text="^Слабое волшебное масло", type="Damage", amount="8" }, 					-- Enchanting oils
+	{ text="^Простое волшебное масло", type="Damage", amount="16" }, 				-- Enchanting oils
+	{ text="^Волшебное масло", type="Damage", amount="24" }, 						-- Enchanting oils
 }
 
 -- Won't check any lines containing the following words (for speed)
@@ -856,7 +853,7 @@ TheoryCraft_IgnoreLines = {
 -- These are handled specially
 
 TheoryCraft_SetsDequipOnly= {
-	{ text="Уменьшает расход маны на заклинания темной магии на %d+%%%.", type="Shadowmanacost", amount=-0.15 }, 			-- Felheart 8 piece bonus
+	{ text="Уменьшает расход маны на заклинания темной магии на %d+%%%.", type="Shadowmanacost", amount=-0.15 }, -- Felheart 8 piece bonus
 }
 
 -- Checks every line beginning Set: for these
@@ -895,8 +892,8 @@ TheoryCraft_Equips = {
 	{ text="Увеличивает исцеляющие действия эффектов и заклинаний не более чем на (%d+)%.", type="Healing" },		    -- Standard +heal
 	{ text="Увеличивает урон, наносимый заклинаниями и эффектами schoolname не более чем на (%d+)%." },			    -- Single school +dam
 	{ text="Восполнение (%d+) маны .+ 5 сек%.", type="manaperfive" },					            -- mana per five
-	{ text="При успешной атаке своими боевыми заклинаниями вы получаете шанс увеличить урон всех заклинаний и эффектов на 132 ед%. на 10 сек%.", type="All", amount=132, duration=9.9, proc=0.05, exact=1 },		    -- Wrath of Cenarius
-	{ text="С вероятностью 2% после каждого успешного заклинания вы сможете восполнять ману во время произнесения со скоростью, равной 100%% от обычной, в течение 15 сек%.", type="ICPercent", amount=1, duration=15, proc=0.02, exact=0 },	    -- Darkmoon Trinket
+	{ text="При успешной атаке своими боевыми заклинаниями вы получаете шанс увеличить урон всех заклинаний и эффектов на 132 ед%. на 10 сек%.", type="All", amount=132, duration=9.9, proc=0.05, exact=1 }, -- Wrath of Cenarius
+	{ text="С вероятностью 2% после каждого успешного заклинания вы сможете восполнять ману во время произнесения со скоростью, равной 100%% от обычной, в течение 15 сек%.", type="ICPercent", amount=1, duration=15, proc=0.02, exact=0 }, -- Darkmoon Trinket
 }
 
 TheoryCraft_WeaponSkillOther = "Рукопашный бой"
