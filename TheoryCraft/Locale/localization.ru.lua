@@ -706,7 +706,7 @@ TheoryCraft_Buffs = {
 --[[]]	{ text="Эффект заклинания \"Волна исцеления\" усилен до (%d+)%%.", type="Healing Wavetalentmod", amount="n/100" },  	-- Healing Way
 --[[]]	{ text="Восполнение (%d+)%% маны раз в 4 сек%.", type="FelEnergy", amount="n/100" },   			-- Fel Energy
 	{ text="Magical damage dealt.-increase.-(%d+)", type="All" },   						-- Very Berry/Eye of Moam
-	{ text="Magical resistances of your spell targets reduced by (%d+)", type="Allpenetration" },   		-- Eye of Moam
+--[[?]]	{ text="Магическое сопротивление целей вашего заклинания снижено на (%d+)", type="Allpenetration" },   		-- Eye of Moam
 	{ text="Увеличивает урон и исцеляющие действия магических эффектов и заклинаний не более чем на (%d+)%.", type="All" },   	-- Elements/Five Thunders
 --[[]]	{ text="Сила атаки в ближнем бою увеличена на (%d+)%. Атаки ближнего боя ускорены на %d+%%, но наносят меньше урона%.", type="AttackPowerCrusader" }, -- Seal of the crusader
 	{ text="(%d+) ед%. маны каждые 5 сек.%.", type="manaperfive" },							-- Warchief's blessing
@@ -737,7 +737,7 @@ TheoryCraft_Buffs = {
 --[[]]	{ text="Дополнительный урон от заклинаний вплоть до .-(%d+)", type="Damage" }, 							-- Flask of Supreme Power / ZHC Damage
 --[[]]	{ text="вероятность критического удара заклинаний.-(%d+)", type="Allcritchance" },							-- Moonkin Aura/Fire Festival Fury
 --[[]]	{ text="Наносимый магический урон и исцеляющие эффекты увеличены на (%d+)", type="All" },					-- Trinket Ephemeral Power
-	{ text="Healing increased by up to (%d+)", type="Healing" },							-- ZHC Healing
+--[[?]]	{ text="Увеличение эффективности лечения на (%d+)", type="Healing" },							-- ZHC Healing
 --[[]]	{ text="30%% урона, получаемого хозяином, передается демону. Весь наносимый урон повышен на (%d+)%%%.", type="Allbaseincrease", amount="n/100" },	-- Soul Link
 }
 
@@ -766,8 +766,8 @@ TheoryCraft_Debuffs = {
 TheoryCraft_DotDurations = {
 	{ text=" за (%d+) сек%.", amount="n" },						-- Shadow Word: Pain, Corruption, Immolate, Renew
 	{ text="раз в секунду в течение (%d+) сек%.", amount="n" }, -- Volley
-	{ text=" seconds for (%d+) sec%.", amount="n" },			-- Tranquility
-	{ text="each second for (%d+) sec%.", amount="n" },			-- Arcane Missiles
+--[[?]]	{ text=" Время действия %– (%d+) сек%.", amount="n" },			-- Tranquility
+--[[?]]	{ text="В течение (%d+) сек%.", amount="n" },			-- Arcane Missiles
 	{ text="Время действия %- (%d+) сек%.", amount="n" },		-- Drain and Siphon Life
 --[[]]	{ text="спустя 1 мин%.", amount="60" },						-- Curse of Doom
 }
@@ -791,7 +791,7 @@ TheoryCraft_EquipEveryLine = {
 	{ text="%+(%d+) к силе атаки дальнего боя", type="RangedAttackPowerReport" }, 	-- Hunter Leg/Helm enchant
 --[[]]	{ text="Блокирование: (%d+)", type="BlockValueReport" }, 						-- Block Value (shield)
 
-	{ text="%+(%d+) Attack Power", type="AttackPowerReport" }, 						-- Attack power
+--[[?]]	{ text="%+(%d+) к силе атаки", type="AttackPowerReport" }, 						-- Attack power
 
 --[[]]	{ text="Добавляет (%d+%.?%d+) ед%. урона в секунду", type="AmmoDPS", slot="Ammo" },	-- Arrows
 
@@ -804,18 +804,18 @@ TheoryCraft_EquipEveryLine = {
 --[[]]	{ text="Прицел %(%+(%d+) к урону%)", type="RangedMax", slot="Ranged" },			-- Weapon Damage enchant
 	{ text="(%d+) %- %d+", type="MeleeMin", slot="MainHand" },						-- Weapon Damage
 	{ text="%d+ %- (%d+)", type="MeleeMax", slot="MainHand" }, 						-- Weapon Damage
-	{ text="Weapon Damage %+(%d+)", type="MeleeMin", slot="MainHand" },				-- Weapon Damage enchant
-	{ text="Weapon Damage %+(%d+)", type="MeleeMax", slot="MainHand" },				-- Weapon Damage enchant
+--[[?]]	{ text="%+(%d+) к урону оружием", type="MeleeMin", slot="MainHand" },				-- Weapon Damage enchant
+--[[?]]	{ text="%+(%d+) к урону оружием", type="MeleeMax", slot="MainHand" },				-- Weapon Damage enchant
 	{ text="(%d+) %- %d+", type="OffhandMin", slot="SecondaryHand" },				-- Weapon Damage
 	{ text="%d+ %- (%d+)", type="OffhandMax", slot="SecondaryHand" }, 				-- Weapon Damage
-	{ text="Weapon Damage %+(%d+)", type="OffhandMin", slot="SecondaryHand" },		-- Weapon Damage enchant
-	{ text="Weapon Damage %+(%d+)", type="OffhandMax", slot="SecondaryHand" },		-- Weapon Damage enchant
+--[[?]]	{ text="%+(%d+) к урону оружием", type="OffhandMin", slot="SecondaryHand" },		-- Weapon Damage enchant
+--[[?]]	{ text="%+(%d+) к урону оружием", type="OffhandMax", slot="SecondaryHand" },		-- Weapon Damage enchant
 
-	{ text="%+(%d+) schoolname Spell Damage" },										-- of wrath items
+--[[?]]	{ text="%+(%d+) к урону от schoolname" },										-- of wrath items
 	{ text="%+(%d+) к урону от заклинаний schoolname" },							-- AQ Glove enchants
 	{ text="%+(%d+) к лечению и урону от заклинаний", type="All", me=1 },			-- Hoodoo Hex
-	{ text="%+(%d+) Healing", type="Healing" },										-- of healing items
-	{ text="%+(%d+) Damage and Healing Spells", type="All" },						-- of sorcery items
+--[[?]]	{ text="%+(%d+) к лечению", type="Healing" },										-- of healing items
+--[[?]]	{ text="%+(%d+) к лечению и урону от заклинаний", type="All" },						-- of sorcery items
 	{ text="%+(%d+) к урону от заклинаний schoolname", me=1 }, 						-- Enchant Weapon - Winter's Might
 	{ text="%+(%d+) к урону от заклинаний", type="All", me=1 }, 					-- Enchant Weapon - Spell Power
 	{ text="%+(%d+) к лечению", type="Healing" },									-- Prophetic Aura
@@ -823,12 +823,12 @@ TheoryCraft_EquipEveryLine = {
 
 	{ text="Использование: Восполняет 375 - 625 ед%. маны%.", type="manarestore", amount="500" }, -- Robe of the Archmage [spell 18385]
 
-	{ text="Spell Hit %+(%d+)%%", type="Allhitchance" },							-- Presence of Sight
-	{ text="%/%+(%d+)%% к меткости", type="Meleehitchance" },						-- Falcon's Call
+	{ text="%+(%d+)%% к меткости заклинаний", type="Allhitchance" },							-- Presence of Sight
+--[[?]]	{ text="%/%+(%d+)%% к меткости", type="Meleehitchance" },						-- Falcon's Call
 
-	{ text="^.(%d+) mana every 5 sec%.", type="manaperfive" },						-- of restoration
-	{ text="Mana Regen %+(%d+)/", type="manaperfive" },								-- zg enchant
-	{ text="Mana Regen (%d+) per 5 sec%.", type="manaperfive" },					-- bracers healing enchant
+--[[?]]	{ text="^.(%d+) ед%. маны каждые 5 секунд", type="manaperfive" },						-- of restoration
+--[[?]]	{ text="%+(%d+) к восполнению маны/", type="manaperfive" },								-- zg enchant
+--[[?]]	{ text="Восполнение (%d+) ед%. маны каждые 5 секунд", type="manaperfive" },					-- bracers healing enchant
 
 	{ text="^Сверкающее масло маны", type="manaperfive", amount="12" }, 			-- Enchanting oils
 	{ text="^Сверкающее масло маны", type="Healing", amount="25" }, 				-- Enchanting oils
